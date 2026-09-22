@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-moto-dark: #0F172A;
+  --color-moto-card: #1E293B;
+  --color-moto-orange: #FF5500;
+  --color-moto-cyan: #00E5FF;
+  --color-moto-border: #475569;
+}
+
+@layer base {
+  body {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Keyframes para la animación del Loader */
+@keyframes bikeDrive {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-bike {
+  animation: bikeDrive 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+/* habilitar 3d */
+.perspective-1000 {
+  perspective: 1000px;
+}
